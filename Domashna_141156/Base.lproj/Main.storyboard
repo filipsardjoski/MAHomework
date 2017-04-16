@@ -268,7 +268,7 @@
         <!--Maps and Location-->
         <scene sceneID="r0M-iS-tG1">
             <objects>
-                <viewController id="nQl-NM-LvJ" sceneMemberID="viewController">
+                <viewController id="nQl-NM-LvJ" customClass="MapsAndLocationViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WUr-Sh-De3"/>
                         <viewControllerLayoutGuide type="bottom" id="9cY-cS-oBt"/>
@@ -276,6 +276,12 @@
                     <view key="view" contentMode="scaleToFill" id="E6H-6a-P9E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5iG-yt-c7h">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Maps and Location" id="PXI-kD-IPy">
@@ -284,11 +290,25 @@
                                 <segue destination="EK0-c0-TQx" kind="presentation" id="awf-A9-Vzn"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="BfV-dH-0mW">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="12d-Pk-8ip">
+                                <rect key="frame" x="287" y="1" width="72" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Locate me"/>
+                                <connections>
+                                    <action selector="showCurrentLocation:" destination="nQl-NM-LvJ" eventType="touchUpInside" id="xGh-9g-OZl"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="map" destination="5iG-yt-c7h" id="39e-PZ-9V2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSY-1r-26X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="238" y="1451"/>
+            <point key="canvasLocation" x="237.59999999999999" y="1450.5247376311845"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="eg5-ht-8F1">
@@ -311,6 +331,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zAU-ND-sQZ"/>
+        <segue reference="awf-A9-Vzn"/>
     </inferredMetricsTieBreakers>
 </document>
