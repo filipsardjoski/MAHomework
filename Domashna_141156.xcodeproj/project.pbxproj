@@ -17,6 +17,7 @@
 		D10CB9111EA12FB900329AA5 /* Domashna_141156Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CB9101EA12FB900329AA5 /* Domashna_141156Tests.swift */; };
 		D10CB91C1EA12FB900329AA5 /* Domashna_141156UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CB91B1EA12FB900329AA5 /* Domashna_141156UITests.swift */; };
 		D13888121EA138F300F33516 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13888111EA138F300F33516 /* SideMenuTableViewController.swift */; };
+		D156EFCE1EA502AA00B72B69 /* WebServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D156EFCD1EA502AA00B72B69 /* WebServiceViewController.swift */; };
 		D17900DB1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17900DA1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift */; };
 		D1E185131EA4BF81004CDBA7 /* GDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185121EA4BF81004CDBA7 /* GDCViewController.swift */; };
 		D1E185151EA4C3C5004CDBA7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */; };
@@ -64,6 +65,7 @@
 		D10CB91B1EA12FB900329AA5 /* Domashna_141156UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domashna_141156UITests.swift; sourceTree = "<group>"; };
 		D10CB91D1EA12FB900329AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D13888111EA138F300F33516 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewController.swift; path = ../SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		D156EFCD1EA502AA00B72B69 /* WebServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceViewController.swift; sourceTree = "<group>"; };
 		D17900DA1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsAndLocationViewController.swift; sourceTree = "<group>"; };
 		D1E185121EA4BF81004CDBA7 /* GDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDCViewController.swift; sourceTree = "<group>"; };
 		D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				D10CB8FB1EA12FB800329AA5 /* AppDelegate.swift */,
+				D156EFCD1EA502AA00B72B69 /* WebServiceViewController.swift */,
 				D13888111EA138F300F33516 /* SideMenuTableViewController.swift */,
 				D10CB8FF1EA12FB800329AA5 /* Main.storyboard */,
 				D1E185161EA4D9EC004CDBA7 /* AccelerometerViewController.swift */,
@@ -465,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D156EFCE1EA502AA00B72B69 /* WebServiceViewController.swift in Sources */,
 				D17900DB1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift in Sources */,
 				D1E185151EA4C3C5004CDBA7 /* CameraViewController.swift in Sources */,
 				D1E185171EA4D9EC004CDBA7 /* AccelerometerViewController.swift in Sources */,

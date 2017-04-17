@@ -44,7 +44,7 @@
             <objects>
                 <navigationController storyboardIdentifier="WebService" id="1DE-pC-Ncn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="OEL-Kx-Uyx"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="igs-XQ-l3T">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="igs-XQ-l3T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -59,7 +59,7 @@
         <!--Web Service-->
         <scene sceneID="A52-a6-GuJ">
             <objects>
-                <viewController id="eY1-Bc-rxh" sceneMemberID="viewController">
+                <viewController id="eY1-Bc-rxh" customClass="WebServiceViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i7r-nq-rxx"/>
                         <viewControllerLayoutGuide type="bottom" id="AdJ-VU-hJp"/>
@@ -67,7 +67,20 @@
                     <view key="view" contentMode="scaleToFill" id="J5h-hZ-Nv1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DxV-MS-JKI">
+                                <rect key="frame" x="16" y="164" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ted-Gi-VVp" appends="YES" id="Bbf-T1-1O2"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Web Service" id="8ib-NV-qUY">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="iog-JC-eXv">
@@ -76,17 +89,25 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textLabel" destination="DxV-MS-JKI" id="RUb-pP-KRd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBg-s8-UOW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="ted-Gi-VVp">
+                    <connections>
+                        <segue destination="EK0-c0-TQx" kind="presentation" id="7eS-We-c2E"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="268" y="2172"/>
+            <point key="canvasLocation" x="268" y="2171.9640179910048"/>
         </scene>
         <!--Item-->
         <scene sceneID="eRO-U8-b4f">
             <objects>
                 <navigationController storyboardIdentifier="SocialNetworkIntegration" id="fgb-AJ-oQh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="z6F-j1-iOU"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ESb-aA-TN1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ESb-aA-TN1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -110,6 +131,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ZbE-yf-SNk" appends="YES" id="LQI-qC-Kt6"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Social Network Integration" id="72B-48-P3V">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="pTO-qf-2BI">
@@ -120,6 +145,11 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R95-dV-uox" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="ZbE-yf-SNk">
+                    <connections>
+                        <segue destination="EK0-c0-TQx" kind="presentation" id="JOB-NJ-CDf"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="268" y="2902"/>
         </scene>
@@ -128,7 +158,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Camera" id="uoq-rF-Rfv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ZQi-U2-XsS"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Uh3-eo-xFd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uh3-eo-xFd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -164,6 +194,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="FTF-Px-r7Z" firstAttribute="top" secondItem="3kT-n0-luP" secondAttribute="bottom" constant="20" id="Cza-rC-6JT"/>
                             <constraint firstItem="FTF-Px-r7Z" firstAttribute="centerX" secondItem="3kT-n0-luP" secondAttribute="centerX" id="EqY-CD-kq7"/>
@@ -172,6 +203,9 @@
                             <constraint firstItem="3kT-n0-luP" firstAttribute="leading" secondItem="hXY-bK-ML4" secondAttribute="leadingMargin" id="lIp-4Z-PAC"/>
                             <constraint firstItem="3kT-n0-luP" firstAttribute="trailing" secondItem="hXY-bK-ML4" secondAttribute="trailingMargin" id="rTo-oi-VDQ"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="phZ-9y-vcL" appends="YES" id="341-kn-TZ4"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Camera" id="lCu-b0-iMM">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="SNV-yt-sU4">
@@ -185,6 +219,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oVG-UL-c6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="phZ-9y-vcL">
+                    <connections>
+                        <segue destination="EK0-c0-TQx" kind="presentation" id="9L5-Tp-Eac"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="268" y="4431.6341829085459"/>
         </scene>
@@ -193,7 +232,7 @@
             <objects>
                 <navigationController storyboardIdentifier="OtherSensor" id="l5X-xt-oKp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="1kE-VT-S66"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="cm9-ul-geo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cm9-ul-geo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -261,6 +300,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="K3u-TE-c79" firstAttribute="leading" secondItem="74y-s7-mdC" secondAttribute="trailing" constant="15" id="67w-DK-MXV"/>
                             <constraint firstItem="3tL-VW-kEe" firstAttribute="leading" secondItem="F5U-bY-Dcd" secondAttribute="trailing" constant="15" id="6bI-ti-hSJ"/>
@@ -284,6 +324,9 @@
                             <constraint firstItem="F5U-bY-Dcd" firstAttribute="leading" secondItem="zp9-Fz-2tp" secondAttribute="leadingMargin" id="tKj-ph-loh"/>
                             <constraint firstItem="n8g-mS-LVc" firstAttribute="top" secondItem="K3u-TE-c79" secondAttribute="bottom" constant="10" id="wvP-pB-Dvh"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="k2j-PK-AaZ" appends="YES" id="nJz-si-ovw"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Accelerometer" id="XWW-Xy-8yp">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="BHh-J7-y0z">
@@ -299,6 +342,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZbI-LI-2xg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="k2j-PK-AaZ">
+                    <connections>
+                        <segue destination="EK0-c0-TQx" kind="presentation" id="2Rv-eI-NhO"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="268" y="5159.3703148425793"/>
         </scene>
@@ -307,7 +355,7 @@
             <objects>
                 <navigationController storyboardIdentifier="GCD" id="k0T-at-fmq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="nDe-eI-bQu"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="UwR-bx-jNO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UwR-bx-jNO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -334,6 +382,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2bQ-NG-3HG">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Xc3-oU-pga" appends="YES" id="AOG-N3-li2"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xx-UE-gJA">
                                 <rect key="frame" x="66" y="124" width="19" height="36"/>
@@ -370,6 +422,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uHs-QR-bCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Xc3-oU-pga">
+                    <connections>
+                        <segue destination="EK0-c0-TQx" kind="presentation" id="HoA-hk-DFA"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="268" y="3680.5097451274364"/>
         </scene>
@@ -378,7 +435,7 @@
             <objects>
                 <navigationController storyboardIdentifier="MapsAndLocation" id="hmJ-d8-uX1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Xnx-bA-WAA"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tGp-rO-gMk">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tGp-rO-gMk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -405,6 +462,10 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5iG-yt-c7h">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HQx-Wn-MUp" appends="YES" id="xZG-aH-3j1"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -432,6 +493,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSY-1r-26X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="HQx-Wn-MUp">
+                    <connections>
+                        <segue destination="EK0-c0-TQx" kind="presentation" id="upT-bn-3te"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="237.59999999999999" y="1450.5247376311845"/>
         </scene>
@@ -439,7 +505,7 @@
         <scene sceneID="eg5-ht-8F1">
             <objects>
                 <navigationController storyboardIdentifier="LeftMenuNavigationController" id="EK0-c0-TQx" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Nn0-K3-wr8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nn0-K3-wr8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -456,6 +522,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zAU-ND-sQZ"/>
+        <segue reference="7eS-We-c2E"/>
     </inferredMetricsTieBreakers>
 </document>
