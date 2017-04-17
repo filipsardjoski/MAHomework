@@ -20,6 +20,7 @@
 		D17900DB1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17900DA1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift */; };
 		D1E185131EA4BF81004CDBA7 /* GDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185121EA4BF81004CDBA7 /* GDCViewController.swift */; };
 		D1E185151EA4C3C5004CDBA7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */; };
+		D1E185171EA4D9EC004CDBA7 /* AccelerometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185161EA4D9EC004CDBA7 /* AccelerometerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		D17900DA1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsAndLocationViewController.swift; sourceTree = "<group>"; };
 		D1E185121EA4BF81004CDBA7 /* GDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDCViewController.swift; sourceTree = "<group>"; };
 		D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		D1E185161EA4D9EC004CDBA7 /* AccelerometerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerometerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				D10CB8FB1EA12FB800329AA5 /* AppDelegate.swift */,
 				D13888111EA138F300F33516 /* SideMenuTableViewController.swift */,
 				D10CB8FF1EA12FB800329AA5 /* Main.storyboard */,
+				D1E185161EA4D9EC004CDBA7 /* AccelerometerViewController.swift */,
 				D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */,
 				D17900DA1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift */,
 				D1E185121EA4BF81004CDBA7 /* GDCViewController.swift */,
@@ -460,6 +463,7 @@
 			files = (
 				D17900DB1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift in Sources */,
 				D1E185151EA4C3C5004CDBA7 /* CameraViewController.swift in Sources */,
+				D1E185171EA4D9EC004CDBA7 /* AccelerometerViewController.swift in Sources */,
 				D13888121EA138F300F33516 /* SideMenuTableViewController.swift in Sources */,
 				D10CB8FC1EA12FB800329AA5 /* AppDelegate.swift in Sources */,
 				D1E185131EA4BF81004CDBA7 /* GDCViewController.swift in Sources */,
