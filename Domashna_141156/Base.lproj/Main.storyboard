@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hmJ-d8-uX1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="k0T-at-fmq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -43,7 +44,7 @@
             <objects>
                 <navigationController storyboardIdentifier="WebService" id="1DE-pC-Ncn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="OEL-Kx-Uyx"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="igs-XQ-l3T">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="igs-XQ-l3T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -85,7 +86,7 @@
             <objects>
                 <navigationController storyboardIdentifier="SocialNetworkIntegration" id="fgb-AJ-oQh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="z6F-j1-iOU"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ESb-aA-TN1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ESb-aA-TN1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -127,7 +128,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Camera" id="uoq-rF-Rfv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ZQi-U2-XsS"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uh3-eo-xFd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Uh3-eo-xFd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -169,7 +170,7 @@
             <objects>
                 <navigationController storyboardIdentifier="OtherSensor" id="l5X-xt-oKp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="1kE-VT-S66"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cm9-ul-geo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="cm9-ul-geo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -211,7 +212,7 @@
             <objects>
                 <navigationController storyboardIdentifier="GCD" id="k0T-at-fmq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="nDe-eI-bQu"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UwR-bx-jNO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="UwR-bx-jNO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -226,7 +227,7 @@
         <!--GCD-->
         <scene sceneID="bg7-kM-3Cs">
             <objects>
-                <viewController id="HcV-9C-JLE" sceneMemberID="viewController">
+                <viewController id="HcV-9C-JLE" customClass="GDCViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oLC-sM-h0i"/>
                         <viewControllerLayoutGuide type="bottom" id="aDn-rX-qfL"/>
@@ -234,7 +235,23 @@
                     <view key="view" contentMode="scaleToFill" id="bd4-Wk-NRZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2bQ-NG-3HG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xx-UE-gJA">
+                                <rect key="frame" x="66" y="124" width="19" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Xx-UE-gJA" firstAttribute="leading" secondItem="bd4-Wk-NRZ" secondAttribute="leadingMargin" constant="50" id="3vD-0l-OWu"/>
+                            <constraint firstItem="5Xx-UE-gJA" firstAttribute="top" secondItem="oLC-sM-h0i" secondAttribute="bottom" constant="60" id="Q1u-ey-Tnr"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="GCD" id="oM2-J2-Yfn">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="Rls-kj-q3L">
@@ -242,18 +259,31 @@
                                 <segue destination="EK0-c0-TQx" kind="presentation" id="p4j-u9-ptq"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="vGF-h4-JCK">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="Ugx-QN-NPG">
+                                <rect key="frame" x="337" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="incrementButtonPressed:" destination="HcV-9C-JLE" eventType="touchUpInside" id="z2J-Yf-l2c"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="countLabel" destination="5Xx-UE-gJA" id="Snb-dR-wft"/>
+                        <outlet property="img" destination="2bQ-NG-3HG" id="2Rc-Nr-ZBb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uHs-QR-bCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="268" y="3681"/>
+            <point key="canvasLocation" x="268" y="3680.5097451274364"/>
         </scene>
         <!--Item-->
         <scene sceneID="dbb-xw-qCP">
             <objects>
                 <navigationController storyboardIdentifier="MapsAndLocation" id="hmJ-d8-uX1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Xnx-bA-WAA"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tGp-rO-gMk">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tGp-rO-gMk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -314,7 +344,7 @@
         <scene sceneID="eg5-ht-8F1">
             <objects>
                 <navigationController storyboardIdentifier="LeftMenuNavigationController" id="EK0-c0-TQx" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nn0-K3-wr8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Nn0-K3-wr8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -331,6 +361,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="awf-A9-Vzn"/>
+        <segue reference="p4j-u9-ptq"/>
     </inferredMetricsTieBreakers>
 </document>
