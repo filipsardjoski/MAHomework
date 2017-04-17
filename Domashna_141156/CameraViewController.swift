@@ -36,17 +36,12 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                 completion: nil)
         }
     }
-    //func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         var chosenImage = UIImage()
         chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         imagePicked.contentMode = .scaleAspectFit
         imagePicked.image = chosenImage
         dismiss(animated:true, completion: nil)
-    }
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
