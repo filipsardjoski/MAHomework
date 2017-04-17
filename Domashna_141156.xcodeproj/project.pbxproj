@@ -21,6 +21,7 @@
 		D1E185131EA4BF81004CDBA7 /* GDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185121EA4BF81004CDBA7 /* GDCViewController.swift */; };
 		D1E185151EA4C3C5004CDBA7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */; };
 		D1E185171EA4D9EC004CDBA7 /* AccelerometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185161EA4D9EC004CDBA7 /* AccelerometerViewController.swift */; };
+		D1E185191EA4EB3C004CDBA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1E185181EA4EB3C004CDBA7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		D1E185121EA4BF81004CDBA7 /* GDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDCViewController.swift; sourceTree = "<group>"; };
 		D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D1E185161EA4D9EC004CDBA7 /* AccelerometerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerometerViewController.swift; sourceTree = "<group>"; };
+		D1E185181EA4EB3C004CDBA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				D10CB9021EA12FB800329AA5 /* Assets.xcassets */,
 				D10CB9041EA12FB800329AA5 /* LaunchScreen.storyboard */,
 				D10CB9071EA12FB800329AA5 /* Info.plist */,
+				D1E185181EA4EB3C004CDBA7 /* GoogleService-Info.plist */,
 			);
 			path = Domashna_141156;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D10CB9061EA12FB800329AA5 /* LaunchScreen.storyboard in Resources */,
+				D1E185191EA4EB3C004CDBA7 /* GoogleService-Info.plist in Resources */,
 				D10CB9031EA12FB800329AA5 /* Assets.xcassets in Resources */,
 				D10CB9011EA12FB800329AA5 /* Main.storyboard in Resources */,
 			);

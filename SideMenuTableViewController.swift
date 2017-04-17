@@ -11,7 +11,7 @@ import SideMenu
 
 class SideMenuTableViewController: UITableViewController {
 
-    var items = ["Maps and Location", "Web Service", "Social Network Integration", "GCD", "Camera", "Other Sensor"]
+    var items = ["Maps and Location", "Web Service", "Social Network Integration", "GCD", "Camera", "Accelerometer"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
