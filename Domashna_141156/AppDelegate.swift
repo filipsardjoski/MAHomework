@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import Fabric
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FIRApp.configure()
         self.ref = FIRDatabase.database().reference()
+        Fabric.with([Twitter.self])
         return true
     }
 

@@ -18,6 +18,25 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>6f8fc05b4b7b78c9e58dcac3f51b8a36de6db95c</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict>
+					<key>consumerKey</key>
+					<string>FxnO8OMFfKSmf5OlffNvB2Efe</string>
+					<key>consumerSecret</key>
+					<string>qpWtF1ReXlMQ44dsQQwbIHz1QTZfnQ8zCW5b1NZ24s7oOXeD2w</string>
+				</dict>
+				<key>KitName</key>
+				<string>Twitter</string>
+			</dict>
+		</array>
+	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>

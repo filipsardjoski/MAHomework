@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1DE-pC-Ncn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fgb-AJ-oQh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -122,7 +122,7 @@
         <!--Social Network Integration-->
         <scene sceneID="1IG-mz-D3C">
             <objects>
-                <viewController id="swI-Op-r8U" sceneMemberID="viewController">
+                <viewController id="swI-Op-r8U" customClass="SocialNetworkIntegrationViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hhe-Wr-Jfe"/>
                         <viewControllerLayoutGuide type="bottom" id="MmH-eK-e9R"/>
@@ -463,9 +463,6 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="HQx-Wn-MUp" appends="YES" id="xZG-aH-3j1"/>
-                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -493,11 +490,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSY-1r-26X" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="HQx-Wn-MUp">
-                    <connections>
-                        <segue destination="EK0-c0-TQx" kind="presentation" id="upT-bn-3te"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="237.59999999999999" y="1450.5247376311845"/>
         </scene>
@@ -522,6 +514,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7eS-We-c2E"/>
+        <segue reference="sNV-ex-wWl"/>
     </inferredMetricsTieBreakers>
 </document>

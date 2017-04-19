@@ -19,6 +19,7 @@
 		D13888121EA138F300F33516 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13888111EA138F300F33516 /* SideMenuTableViewController.swift */; };
 		D156EFCE1EA502AA00B72B69 /* WebServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D156EFCD1EA502AA00B72B69 /* WebServiceViewController.swift */; };
 		D17900DB1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17900DA1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift */; };
+		D19B5B0A1EA80D180090A97F /* SocialNetworkIntegrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19B5B091EA80D180090A97F /* SocialNetworkIntegrationViewController.swift */; };
 		D1E185131EA4BF81004CDBA7 /* GDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185121EA4BF81004CDBA7 /* GDCViewController.swift */; };
 		D1E185151EA4C3C5004CDBA7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */; };
 		D1E185171EA4D9EC004CDBA7 /* AccelerometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185161EA4D9EC004CDBA7 /* AccelerometerViewController.swift */; };
@@ -67,6 +68,7 @@
 		D13888111EA138F300F33516 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewController.swift; path = ../SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		D156EFCD1EA502AA00B72B69 /* WebServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceViewController.swift; sourceTree = "<group>"; };
 		D17900DA1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsAndLocationViewController.swift; sourceTree = "<group>"; };
+		D19B5B091EA80D180090A97F /* SocialNetworkIntegrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialNetworkIntegrationViewController.swift; sourceTree = "<group>"; };
 		D1E185121EA4BF81004CDBA7 /* GDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDCViewController.swift; sourceTree = "<group>"; };
 		D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D1E185161EA4D9EC004CDBA7 /* AccelerometerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerometerViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				D156EFCD1EA502AA00B72B69 /* WebServiceViewController.swift */,
 				D13888111EA138F300F33516 /* SideMenuTableViewController.swift */,
 				D10CB8FF1EA12FB800329AA5 /* Main.storyboard */,
+				D19B5B091EA80D180090A97F /* SocialNetworkIntegrationViewController.swift */,
 				D1E185161EA4D9EC004CDBA7 /* AccelerometerViewController.swift */,
 				D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */,
 				D17900DA1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift */,
@@ -196,6 +199,7 @@
 				D10CB8F61EA12FB800329AA5 /* Resources */,
 				C5B878C83C339C0D8D93131C /* [CP] Embed Pods Frameworks */,
 				AD892AAC4BCBE1B50FF98C51 /* [CP] Copy Pods Resources */,
+				D19B5B081EA80C260090A97F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -446,6 +450,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Domashna_141156/Pods-Domashna_141156-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D19B5B081EA80C260090A97F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 6f8fc05b4b7b78c9e58dcac3f51b8a36de6db95c 82951b55810506396069a90e8ebc784420f18f1af103a8191496bd962cfb3779";
+		};
 		F416229C312F03ACA86445E2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,6 +492,7 @@
 				D13888121EA138F300F33516 /* SideMenuTableViewController.swift in Sources */,
 				D10CB8FC1EA12FB800329AA5 /* AppDelegate.swift in Sources */,
 				D1E185131EA4BF81004CDBA7 /* GDCViewController.swift in Sources */,
+				D19B5B0A1EA80D180090A97F /* SocialNetworkIntegrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

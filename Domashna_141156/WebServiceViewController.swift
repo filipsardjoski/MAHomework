@@ -21,6 +21,14 @@ class WebServiceViewController: UIViewController {
         
         ref.observe(FIRDataEventType.value, with: { (snapshot) in
             let postDict = snapshot.value as? [String : AnyObject] ?? [:]
+            
+            //let text = postDict.
+            //snapshotprint (String(describing: text))
+            
+            
+            //self.textLabel.text = postDict.first?.value as? String
+            //postDict.index(forKey: <#T##String#>)
+            
             var flag = true
             for i in postDict {
                 if flag {
