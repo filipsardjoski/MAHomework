@@ -20,6 +20,7 @@
 		D156EFCE1EA502AA00B72B69 /* WebServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D156EFCD1EA502AA00B72B69 /* WebServiceViewController.swift */; };
 		D17900DB1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17900DA1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift */; };
 		D193C1701EA8C9C100EDC625 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D193C16F1EA8C9C100EDC625 /* NotificationsViewController.swift */; };
+		D193C1721EA9500900EDC625 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D193C1711EA9500900EDC625 /* AnimationViewController.swift */; };
 		D19B5B0A1EA80D180090A97F /* SocialNetworkIntegrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19B5B091EA80D180090A97F /* SocialNetworkIntegrationViewController.swift */; };
 		D1E185131EA4BF81004CDBA7 /* GDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185121EA4BF81004CDBA7 /* GDCViewController.swift */; };
 		D1E185151EA4C3C5004CDBA7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */; };
@@ -70,6 +71,7 @@
 		D156EFCD1EA502AA00B72B69 /* WebServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceViewController.swift; sourceTree = "<group>"; };
 		D17900DA1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsAndLocationViewController.swift; sourceTree = "<group>"; };
 		D193C16F1EA8C9C100EDC625 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		D193C1711EA9500900EDC625 /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		D19B5B091EA80D180090A97F /* SocialNetworkIntegrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialNetworkIntegrationViewController.swift; sourceTree = "<group>"; };
 		D1E185121EA4BF81004CDBA7 /* GDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDCViewController.swift; sourceTree = "<group>"; };
 		D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				D156EFCD1EA502AA00B72B69 /* WebServiceViewController.swift */,
 				D13888111EA138F300F33516 /* SideMenuTableViewController.swift */,
 				D10CB8FF1EA12FB800329AA5 /* Main.storyboard */,
+				D193C1711EA9500900EDC625 /* AnimationViewController.swift */,
 				D193C16F1EA8C9C100EDC625 /* NotificationsViewController.swift */,
 				D19B5B091EA80D180090A97F /* SocialNetworkIntegrationViewController.swift */,
 				D1E185161EA4D9EC004CDBA7 /* AccelerometerViewController.swift */,
@@ -495,6 +498,7 @@
 				D1E185171EA4D9EC004CDBA7 /* AccelerometerViewController.swift in Sources */,
 				D13888121EA138F300F33516 /* SideMenuTableViewController.swift in Sources */,
 				D10CB8FC1EA12FB800329AA5 /* AppDelegate.swift in Sources */,
+				D193C1721EA9500900EDC625 /* AnimationViewController.swift in Sources */,
 				D1E185131EA4BF81004CDBA7 /* GDCViewController.swift in Sources */,
 				D19B5B0A1EA80D180090A97F /* SocialNetworkIntegrationViewController.swift in Sources */,
 			);
