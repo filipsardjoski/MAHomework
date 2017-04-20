@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fgb-AJ-oQh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="r5v-wX-aBw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -37,7 +37,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFf-fY-gZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3185" y="3143"/>
+            <point key="canvasLocation" x="2926" y="3143"/>
         </scene>
         <!--Item-->
         <scene sceneID="7Tb-YO-zNu">
@@ -230,7 +230,7 @@
         <!--Item-->
         <scene sceneID="j0Y-4p-D4Q">
             <objects>
-                <navigationController storyboardIdentifier="OtherSensor" id="l5X-xt-oKp" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Accelerometer" id="l5X-xt-oKp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="1kE-VT-S66"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cm9-ul-geo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -349,6 +349,74 @@
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="268" y="5159.3703148425793"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LSt-cR-0DP">
+            <objects>
+                <navigationController id="r5v-wX-aBw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g6J-cy-F4m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fT5-xw-VH7" kind="relationship" relationship="rootViewController" id="JeL-5N-mnA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="89p-uX-HGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-711" y="5943"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="Kfx-Fl-q2T">
+            <objects>
+                <viewController id="fT5-xw-VH7" customClass="NotificationsViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gnO-U8-KQe"/>
+                        <viewControllerLayoutGuide type="bottom" id="VoD-yv-Qdn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tJC-kB-4ly">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5X-yv-k4I">
+                                <rect key="frame" x="100" y="214" width="175" height="30"/>
+                                <state key="normal" title="Get a notification in 5 sec"/>
+                                <connections>
+                                    <action selector="getNotificationButtonPressed:" destination="fT5-xw-VH7" eventType="touchUpInside" id="Ngu-fR-SQW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exit the app to see the notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTg-Du-3Jf">
+                                <rect key="frame" x="0.0" y="279" width="375" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VTg-Du-3Jf" firstAttribute="leading" secondItem="tJC-kB-4ly" secondAttribute="leading" id="PhT-bh-3AV"/>
+                            <constraint firstItem="h5X-yv-k4I" firstAttribute="top" secondItem="gnO-U8-KQe" secondAttribute="bottom" constant="150" id="chB-zu-7UC"/>
+                            <constraint firstAttribute="trailing" secondItem="VTg-Du-3Jf" secondAttribute="trailing" id="eKA-nI-XNz"/>
+                            <constraint firstItem="h5X-yv-k4I" firstAttribute="centerX" secondItem="tJC-kB-4ly" secondAttribute="centerX" id="oos-5t-TgP"/>
+                            <constraint firstItem="VTg-Du-3Jf" firstAttribute="top" secondItem="h5X-yv-k4I" secondAttribute="bottom" constant="35" id="uuV-uu-XLK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notifications" id="dh6-p6-tYz">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="OGg-fp-NdM">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1cd-KR-rLm">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Menu"/>
+                                <connections>
+                                    <segue destination="EK0-c0-TQx" kind="presentation" id="SOx-vn-NSY"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zi6-xw-nvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="268" y="5942.8785607196405"/>
         </scene>
         <!--Item-->
         <scene sceneID="Xeo-ud-85f">
@@ -514,6 +582,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sNV-ex-wWl"/>
+        <segue reference="SOx-vn-NSY"/>
     </inferredMetricsTieBreakers>
 </document>

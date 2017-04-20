@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import Fabric
 import TwitterKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
         self.ref = FIRDatabase.database().reference()
         Fabric.with([Twitter.self])
+        
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options:[.badge, .alert, .sound]) { (granted, error) in
+            // Enable or disable features based on authorization.
+        }
+        application.registerForRemoteNotifications()
+        
         return true
     }
 

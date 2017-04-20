@@ -19,6 +19,7 @@
 		D13888121EA138F300F33516 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13888111EA138F300F33516 /* SideMenuTableViewController.swift */; };
 		D156EFCE1EA502AA00B72B69 /* WebServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D156EFCD1EA502AA00B72B69 /* WebServiceViewController.swift */; };
 		D17900DB1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17900DA1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift */; };
+		D193C1701EA8C9C100EDC625 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D193C16F1EA8C9C100EDC625 /* NotificationsViewController.swift */; };
 		D19B5B0A1EA80D180090A97F /* SocialNetworkIntegrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19B5B091EA80D180090A97F /* SocialNetworkIntegrationViewController.swift */; };
 		D1E185131EA4BF81004CDBA7 /* GDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185121EA4BF81004CDBA7 /* GDCViewController.swift */; };
 		D1E185151EA4C3C5004CDBA7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */; };
@@ -68,6 +69,7 @@
 		D13888111EA138F300F33516 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewController.swift; path = ../SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		D156EFCD1EA502AA00B72B69 /* WebServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceViewController.swift; sourceTree = "<group>"; };
 		D17900DA1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsAndLocationViewController.swift; sourceTree = "<group>"; };
+		D193C16F1EA8C9C100EDC625 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		D19B5B091EA80D180090A97F /* SocialNetworkIntegrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialNetworkIntegrationViewController.swift; sourceTree = "<group>"; };
 		D1E185121EA4BF81004CDBA7 /* GDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDCViewController.swift; sourceTree = "<group>"; };
 		D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				D156EFCD1EA502AA00B72B69 /* WebServiceViewController.swift */,
 				D13888111EA138F300F33516 /* SideMenuTableViewController.swift */,
 				D10CB8FF1EA12FB800329AA5 /* Main.storyboard */,
+				D193C16F1EA8C9C100EDC625 /* NotificationsViewController.swift */,
 				D19B5B091EA80D180090A97F /* SocialNetworkIntegrationViewController.swift */,
 				D1E185161EA4D9EC004CDBA7 /* AccelerometerViewController.swift */,
 				D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */,
@@ -485,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D193C1701EA8C9C100EDC625 /* NotificationsViewController.swift in Sources */,
 				D156EFCE1EA502AA00B72B69 /* WebServiceViewController.swift in Sources */,
 				D17900DB1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift in Sources */,
 				D1E185151EA4C3C5004CDBA7 /* CameraViewController.swift in Sources */,
@@ -647,11 +651,13 @@
 			baseConfigurationReference = 17FC4E8A697381C267CF85FE /* Pods-Domashna_141156.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5F6VXBM4CU;
 				INFOPLIST_FILE = Domashna_141156/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sardzoski.Domashna-141156";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -661,11 +667,13 @@
 			baseConfigurationReference = 6433F46878D593184F6D94F9 /* Pods-Domashna_141156.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5F6VXBM4CU;
 				INFOPLIST_FILE = Domashna_141156/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sardzoski.Domashna-141156";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

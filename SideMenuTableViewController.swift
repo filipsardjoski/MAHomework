@@ -11,7 +11,7 @@ import SideMenu
 
 class SideMenuTableViewController: UITableViewController {
 
-    var items = ["Maps and Location", "Web Service", "Social Network Integration", "GCD", "Camera", "Accelerometer"]
+    var items = ["Maps and Location", "Web Service", "Social Network Integration", "GCD", "Camera", "Accelerometer", "Notifications", "Custom Animation"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,27 +65,49 @@ class SideMenuTableViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
         
-        /*switch (indexPath.row) {
+        // Get storyboard
+        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // Get profile NC
+        //let profileNC = storyboard.instantiateViewControllerWithIdentifier("LoginNC") as! UINavigationController
+        
+        switch (indexPath.row) {
             case 0:
-                performSegue(withIdentifier: "MapsAndLocationSegue", sender: self)
+                //let MapsAndLocationViewController = self.storyboard?.instantiateViewController(withIdentifier: "MapsAndLocation")
+                //let MAL = storyboard.instantiateViewController(withIdentifier: "MapsAndLocation") as! UINavigationController
+                //self.navigationController?.pushViewController(MAL, animated: true)
+                //self.present(MAL, animated: true, completion: nil)
+                //self.presentedViewController?.
+                
+                if let vc3 = self.storyboard?.instantiateViewController(withIdentifier: "MapsAndLocation") as? UINavigationController {
+                    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                    appDelegate.window?.rootViewController!.present(vc3, animated: true, completion: nil)
+                }
+                
                 break
             case 1:
-                performSegue(withIdentifier: "WebServiceSegue", sender: self)
+                //let WebServiceViewController = self.storyboard?.instantiateViewController(withIdentifier: "WebService")
+                //self.navigationController = WebServiceViewController?.navigationController
+                // self.navigationController?.pushViewController(WebServiceViewController!, animated: true)
                 break
             case 2:
-                performSegue(withIdentifier: "SocialNetworkIntegrationSegue", sender: self)
+                let SocialNetworkIntegrationViewController = self.storyboard?.instantiateViewController(withIdentifier: "SocialNetworkIntegration")
+                self.navigationController?.pushViewController(SocialNetworkIntegrationViewController!, animated: true)
                 break
             case 3:
-                performSegue(withIdentifier: "GCDSegue", sender: self)
+                let GCDViewController = self.storyboard?.instantiateViewController(withIdentifier: "GCD")
+                self.navigationController?.pushViewController(GCDViewController!, animated: true)
                 break
             case 4:
-                performSegue(withIdentifier: "CameraSegue", sender: self)
+                let CameraViewController = self.storyboard?.instantiateViewController(withIdentifier: "Camera")
+                self.navigationController?.pushViewController(CameraViewController!, animated: true)
                 break
             case 5:
-                performSegue(withIdentifier: "OtherSensorSegue", sender: self)
+                let AccelerometerViewController = self.storyboard?.instantiateViewController(withIdentifier: "Accelerometer")
+                self.navigationController?.pushViewController(AccelerometerViewController!, animated: true)
                 break
             default: break
-        }*/
+        }
     }
     
 }
