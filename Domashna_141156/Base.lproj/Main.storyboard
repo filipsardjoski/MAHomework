@@ -468,6 +468,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Menu"/>
                             </button>
+                            <connections>
+                                <segue destination="EK0-c0-TQx" kind="presentation" id="5MF-C2-dRB"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -639,6 +642,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SOx-vn-NSY"/>
+        <segue reference="5MF-C2-dRB"/>
     </inferredMetricsTieBreakers>
 </document>

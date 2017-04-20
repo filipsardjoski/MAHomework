@@ -15,7 +15,6 @@ class AnimationViewController: UIViewController {
     @IBAction func animationButtonIsPressed(_ sender: Any) {
         button = sender as! UIButton
         
-        //Se pravi pomalo kopcheto
         button.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
         
         UIView.animate(withDuration: 2.0,
