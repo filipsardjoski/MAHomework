@@ -467,10 +467,10 @@
                                 <rect key="frame" x="16" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Menu"/>
+                                <connections>
+                                    <segue destination="EK0-c0-TQx" kind="presentation" id="wUN-fN-9K2"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <segue destination="EK0-c0-TQx" kind="presentation" id="5MF-C2-dRB"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -642,6 +642,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5MF-C2-dRB"/>
+        <segue reference="wUN-fN-9K2"/>
     </inferredMetricsTieBreakers>
 </document>
