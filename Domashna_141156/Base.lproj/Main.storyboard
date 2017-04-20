@@ -42,7 +42,7 @@
         <!--Item-->
         <scene sceneID="7Tb-YO-zNu">
             <objects>
-                <navigationController storyboardIdentifier="WebService" id="1DE-pC-Ncn" sceneMemberID="viewController">
+                <navigationController id="1DE-pC-Ncn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="OEL-Kx-Uyx"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="igs-XQ-l3T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -59,7 +59,7 @@
         <!--Web Service-->
         <scene sceneID="A52-a6-GuJ">
             <objects>
-                <viewController id="eY1-Bc-rxh" customClass="WebServiceViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="webService" id="eY1-Bc-rxh" customClass="WebServiceViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i7r-nq-rxx"/>
                         <viewControllerLayoutGuide type="bottom" id="AdJ-VU-hJp"/>
@@ -78,9 +78,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="ted-Gi-VVp" appends="YES" id="Bbf-T1-1O2"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Web Service" id="8ib-NV-qUY">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="iog-JC-eXv">
@@ -94,18 +91,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBg-s8-UOW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="ted-Gi-VVp">
-                    <connections>
-                        <segue destination="EK0-c0-TQx" kind="presentation" id="7eS-We-c2E"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="268" y="2171.9640179910048"/>
         </scene>
         <!--Item-->
         <scene sceneID="eRO-U8-b4f">
             <objects>
-                <navigationController storyboardIdentifier="SocialNetworkIntegration" id="fgb-AJ-oQh" sceneMemberID="viewController">
+                <navigationController id="fgb-AJ-oQh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="z6F-j1-iOU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ESb-aA-TN1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -122,7 +114,7 @@
         <!--Social Network Integration-->
         <scene sceneID="1IG-mz-D3C">
             <objects>
-                <viewController id="swI-Op-r8U" customClass="SocialNetworkIntegrationViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="socialNetworkIntegration" id="swI-Op-r8U" customClass="SocialNetworkIntegrationViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hhe-Wr-Jfe"/>
                         <viewControllerLayoutGuide type="bottom" id="MmH-eK-e9R"/>
@@ -132,9 +124,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="ZbE-yf-SNk" appends="YES" id="LQI-qC-Kt6"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Social Network Integration" id="72B-48-P3V">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="pTO-qf-2BI">
@@ -145,18 +134,13 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R95-dV-uox" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="ZbE-yf-SNk">
-                    <connections>
-                        <segue destination="EK0-c0-TQx" kind="presentation" id="JOB-NJ-CDf"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="268" y="2902"/>
         </scene>
         <!--Item-->
         <scene sceneID="ZaA-sa-Cge">
             <objects>
-                <navigationController storyboardIdentifier="Camera" id="uoq-rF-Rfv" sceneMemberID="viewController">
+                <navigationController id="uoq-rF-Rfv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ZQi-U2-XsS"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uh3-eo-xFd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -173,7 +157,7 @@
         <!--Camera-->
         <scene sceneID="Nn2-us-Q6G">
             <objects>
-                <viewController id="l4o-a0-XW4" customClass="CameraViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="camera" id="l4o-a0-XW4" customClass="CameraViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Q69-AU-X37"/>
                         <viewControllerLayoutGuide type="bottom" id="Y8B-4i-PzI"/>
@@ -203,9 +187,6 @@
                             <constraint firstItem="3kT-n0-luP" firstAttribute="leading" secondItem="hXY-bK-ML4" secondAttribute="leadingMargin" id="lIp-4Z-PAC"/>
                             <constraint firstItem="3kT-n0-luP" firstAttribute="trailing" secondItem="hXY-bK-ML4" secondAttribute="trailingMargin" id="rTo-oi-VDQ"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="phZ-9y-vcL" appends="YES" id="341-kn-TZ4"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Camera" id="lCu-b0-iMM">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="SNV-yt-sU4">
@@ -219,11 +200,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oVG-UL-c6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="phZ-9y-vcL">
-                    <connections>
-                        <segue destination="EK0-c0-TQx" kind="presentation" id="9L5-Tp-Eac"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="268" y="4431.6341829085459"/>
         </scene>
@@ -247,7 +223,7 @@
         <!--Accelerometer-->
         <scene sceneID="EcN-im-xHb">
             <objects>
-                <viewController id="X7w-uA-C5g" customClass="AccelerometerViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="accelerometer" id="X7w-uA-C5g" customClass="AccelerometerViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T6q-EZ-qfZ"/>
                         <viewControllerLayoutGuide type="bottom" id="s9i-eP-gmh"/>
@@ -324,9 +300,6 @@
                             <constraint firstItem="F5U-bY-Dcd" firstAttribute="leading" secondItem="zp9-Fz-2tp" secondAttribute="leadingMargin" id="tKj-ph-loh"/>
                             <constraint firstItem="n8g-mS-LVc" firstAttribute="top" secondItem="K3u-TE-c79" secondAttribute="bottom" constant="10" id="wvP-pB-Dvh"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="k2j-PK-AaZ" appends="YES" id="nJz-si-ovw"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Accelerometer" id="XWW-Xy-8yp">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="BHh-J7-y0z">
@@ -342,11 +315,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZbI-LI-2xg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="k2j-PK-AaZ">
-                    <connections>
-                        <segue destination="EK0-c0-TQx" kind="presentation" id="2Rv-eI-NhO"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="268" y="5159.3703148425793"/>
         </scene>
@@ -390,7 +358,7 @@
                         <viewControllerLayoutGuide type="top" id="gnO-U8-KQe"/>
                         <viewControllerLayoutGuide type="bottom" id="VoD-yv-Qdn"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tJC-kB-4ly">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="notifications" id="tJC-kB-4ly">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -437,7 +405,7 @@
         <!--Animation-->
         <scene sceneID="boS-no-sCS">
             <objects>
-                <viewController id="HYL-4T-vBk" customClass="AnimationViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="animation" id="HYL-4T-vBk" customClass="AnimationViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mo1-n4-TXX"/>
                         <viewControllerLayoutGuide type="bottom" id="kiS-Yl-h3J"/>
@@ -481,7 +449,7 @@
         <!--Item-->
         <scene sceneID="Xeo-ud-85f">
             <objects>
-                <navigationController storyboardIdentifier="GCD" id="k0T-at-fmq" sceneMemberID="viewController">
+                <navigationController id="k0T-at-fmq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="nDe-eI-bQu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UwR-bx-jNO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -498,7 +466,7 @@
         <!--GCD-->
         <scene sceneID="bg7-kM-3Cs">
             <objects>
-                <viewController id="HcV-9C-JLE" customClass="GDCViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gcd" id="HcV-9C-JLE" customClass="GDCViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oLC-sM-h0i"/>
                         <viewControllerLayoutGuide type="bottom" id="aDn-rX-qfL"/>
@@ -511,9 +479,6 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Xc3-oU-pga" appends="YES" id="AOG-N3-li2"/>
-                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xx-UE-gJA">
                                 <rect key="frame" x="66" y="124" width="19" height="36"/>
@@ -550,18 +515,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uHs-QR-bCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Xc3-oU-pga">
-                    <connections>
-                        <segue destination="EK0-c0-TQx" kind="presentation" id="HoA-hk-DFA"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="268" y="3680.5097451274364"/>
         </scene>
         <!--Item-->
         <scene sceneID="dbb-xw-qCP">
             <objects>
-                <navigationController storyboardIdentifier="MapsAndLocation" id="hmJ-d8-uX1" sceneMemberID="viewController">
+                <navigationController id="hmJ-d8-uX1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Xnx-bA-WAA"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tGp-rO-gMk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -578,7 +538,7 @@
         <!--Maps and Location-->
         <scene sceneID="r0M-iS-tG1">
             <objects>
-                <viewController id="nQl-NM-LvJ" customClass="MapsAndLocationViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapsAndLocation" id="nQl-NM-LvJ" customClass="MapsAndLocationViewController" customModule="Domashna_141156" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WUr-Sh-De3"/>
                         <viewControllerLayoutGuide type="bottom" id="9cY-cS-oBt"/>
@@ -598,7 +558,7 @@
                     <navigationItem key="navigationItem" title="Maps and Location" id="PXI-kD-IPy">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="rTG-aY-vLr">
                             <connections>
-                                <segue destination="EK0-c0-TQx" kind="presentation" id="awf-A9-Vzn"/>
+                                <segue destination="EK0-c0-TQx" kind="presentation" identifier="" id="awf-A9-Vzn"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="BfV-dH-0mW">

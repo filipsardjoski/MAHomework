@@ -73,38 +73,36 @@ class SideMenuTableViewController: UITableViewController {
         
         switch (indexPath.row) {
             case 0:
-                //let MapsAndLocationViewController = self.storyboard?.instantiateViewController(withIdentifier: "MapsAndLocation")
-                //let MAL = storyboard.instantiateViewController(withIdentifier: "MapsAndLocation") as! UINavigationController
-                //self.navigationController?.pushViewController(MAL, animated: true)
-                //self.present(MAL, animated: true, completion: nil)
-                //self.presentedViewController?.
-                
-                if let vc3 = self.storyboard?.instantiateViewController(withIdentifier: "MapsAndLocation") as? UINavigationController {
-                    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                    appDelegate.window?.rootViewController!.present(vc3, animated: true, completion: nil)
-                }
-                
+                let viewController = storyboard?.instantiateViewController(withIdentifier: "mapsAndLocation")
+                self.navigationController?.pushViewController(viewController!, animated: false)
                 break
             case 1:
-                //let WebServiceViewController = self.storyboard?.instantiateViewController(withIdentifier: "WebService")
-                //self.navigationController = WebServiceViewController?.navigationController
-                // self.navigationController?.pushViewController(WebServiceViewController!, animated: true)
+                let viewController = storyboard?.instantiateViewController(withIdentifier: "webService")
+                self.navigationController?.pushViewController(viewController!, animated: false)
                 break
             case 2:
-                let SocialNetworkIntegrationViewController = self.storyboard?.instantiateViewController(withIdentifier: "SocialNetworkIntegration")
-                self.navigationController?.pushViewController(SocialNetworkIntegrationViewController!, animated: true)
+                let viewController = storyboard?.instantiateViewController(withIdentifier: "socialNetworkIntegration")
+                self.navigationController?.pushViewController(viewController!, animated: false)
                 break
             case 3:
-                let GCDViewController = self.storyboard?.instantiateViewController(withIdentifier: "GCD")
-                self.navigationController?.pushViewController(GCDViewController!, animated: true)
+                let viewController = storyboard?.instantiateViewController(withIdentifier: "gcd")
+                self.navigationController?.pushViewController(viewController!, animated: false)
                 break
             case 4:
-                let CameraViewController = self.storyboard?.instantiateViewController(withIdentifier: "Camera")
-                self.navigationController?.pushViewController(CameraViewController!, animated: true)
+                let viewController = storyboard?.instantiateViewController(withIdentifier: "camera")
+                self.navigationController?.pushViewController(viewController!, animated: false)
                 break
             case 5:
-                let AccelerometerViewController = self.storyboard?.instantiateViewController(withIdentifier: "Accelerometer")
-                self.navigationController?.pushViewController(AccelerometerViewController!, animated: true)
+                let viewController = storyboard?.instantiateViewController(withIdentifier: "accelerometer")
+                self.navigationController?.pushViewController(viewController!, animated: false)
+                break
+            case 6:
+                let viewController = storyboard?.instantiateViewController(withIdentifier: "notifications")
+                self.navigationController?.pushViewController(viewController!, animated: false)
+                break
+            case 7:
+                let viewController = storyboard?.instantiateViewController(withIdentifier: "animation")
+                self.navigationController?.pushViewController(viewController!, animated: false)
                 break
             default: break
         }
