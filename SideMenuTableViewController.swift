@@ -11,7 +11,7 @@ import SideMenu
 
 class SideMenuTableViewController: UITableViewController {
 
-    var items = ["Maps and Location", "Web Service", "Social Network Integration", "GCD", "Camera", "Accelerometer", "Notifications", "Custom Animation"]
+    var items = ["Maps and Location", "Web Service", "Social Network Integration", "GCD", "Camera", "Accelerometer", "Notifications", "Custom Animation", "Core Data"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,12 +65,6 @@ class SideMenuTableViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
         
-        // Get storyboard
-        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        // Get profile NC
-        //let profileNC = storyboard.instantiateViewControllerWithIdentifier("LoginNC") as! UINavigationController
-        
         switch (indexPath.row) {
             case 0:
                 let viewController = storyboard?.instantiateViewController(withIdentifier: "mapsAndLocation")
@@ -102,6 +96,10 @@ class SideMenuTableViewController: UITableViewController {
                 break
             case 7:
                 let viewController = storyboard?.instantiateViewController(withIdentifier: "animation")
+                self.navigationController?.pushViewController(viewController!, animated: false)
+                break
+            case 8:
+                let viewController = storyboard?.instantiateViewController(withIdentifier: "coreData")
                 self.navigationController?.pushViewController(viewController!, animated: false)
                 break
             default: break

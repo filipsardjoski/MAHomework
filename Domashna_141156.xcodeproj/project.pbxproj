@@ -19,8 +19,10 @@
 		D13888121EA138F300F33516 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13888111EA138F300F33516 /* SideMenuTableViewController.swift */; };
 		D156EFCE1EA502AA00B72B69 /* WebServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D156EFCD1EA502AA00B72B69 /* WebServiceViewController.swift */; };
 		D17900DB1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17900DA1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift */; };
+		D17906571EAA9F960025E07B /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D17906551EAA9F960025E07B /* CoreData.xcdatamodeld */; };
 		D193C1701EA8C9C100EDC625 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D193C16F1EA8C9C100EDC625 /* NotificationsViewController.swift */; };
 		D193C1721EA9500900EDC625 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D193C1711EA9500900EDC625 /* AnimationViewController.swift */; };
+		D193C1761EA96BC400EDC625 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D193C1751EA96BC400EDC625 /* CoreDataTableViewController.swift */; };
 		D19B5B0A1EA80D180090A97F /* SocialNetworkIntegrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19B5B091EA80D180090A97F /* SocialNetworkIntegrationViewController.swift */; };
 		D1E185131EA4BF81004CDBA7 /* GDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185121EA4BF81004CDBA7 /* GDCViewController.swift */; };
 		D1E185151EA4C3C5004CDBA7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */; };
@@ -70,8 +72,10 @@
 		D13888111EA138F300F33516 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuTableViewController.swift; path = ../SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		D156EFCD1EA502AA00B72B69 /* WebServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceViewController.swift; sourceTree = "<group>"; };
 		D17900DA1EA3DBFF009EBF8F /* MapsAndLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsAndLocationViewController.swift; sourceTree = "<group>"; };
+		D17906561EAA9F960025E07B /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		D193C16F1EA8C9C100EDC625 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		D193C1711EA9500900EDC625 /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		D193C1751EA96BC400EDC625 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
 		D19B5B091EA80D180090A97F /* SocialNetworkIntegrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialNetworkIntegrationViewController.swift; sourceTree = "<group>"; };
 		D1E185121EA4BF81004CDBA7 /* GDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDCViewController.swift; sourceTree = "<group>"; };
 		D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 				D10CB8FF1EA12FB800329AA5 /* Main.storyboard */,
 				D193C1711EA9500900EDC625 /* AnimationViewController.swift */,
 				D193C16F1EA8C9C100EDC625 /* NotificationsViewController.swift */,
+				D193C1751EA96BC400EDC625 /* CoreDataTableViewController.swift */,
+				D17906551EAA9F960025E07B /* CoreData.xcdatamodeld */,
 				D19B5B091EA80D180090A97F /* SocialNetworkIntegrationViewController.swift */,
 				D1E185161EA4D9EC004CDBA7 /* AccelerometerViewController.swift */,
 				D1E185141EA4C3C5004CDBA7 /* CameraViewController.swift */,
@@ -499,8 +505,10 @@
 				D13888121EA138F300F33516 /* SideMenuTableViewController.swift in Sources */,
 				D10CB8FC1EA12FB800329AA5 /* AppDelegate.swift in Sources */,
 				D193C1721EA9500900EDC625 /* AnimationViewController.swift in Sources */,
+				D17906571EAA9F960025E07B /* CoreData.xcdatamodeld in Sources */,
 				D1E185131EA4BF81004CDBA7 /* GDCViewController.swift in Sources */,
 				D19B5B0A1EA80D180090A97F /* SocialNetworkIntegrationViewController.swift in Sources */,
+				D193C1761EA96BC400EDC625 /* CoreDataTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,6 +792,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D17906551EAA9F960025E07B /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D17906561EAA9F960025E07B /* CoreData.xcdatamodel */,
+			);
+			currentVersion = D17906561EAA9F960025E07B /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D10CB8F01EA12FB800329AA5 /* Project object */;
 }

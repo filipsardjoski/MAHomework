@@ -14,9 +14,8 @@ class NotificationsViewController: UIViewController {
     @IBAction func getNotificationButtonPressed(_ sender: Any) {
         if #available(iOS 10.0, *) {
             let content = UNMutableNotificationContent()
-            content.title = "Intro to Notifications"
-            content.subtitle = "Lets code,Talk is cheap"
-            content.body = "Sample code from WWDC"
+            content.title = "Local Notification"
+            content.body = "Thank you for waiting 5 seconds"
             content.sound = UNNotificationSound.default()
             content.categoryIdentifier = "notificationIdentifier"
             // Deliver the notification in five seconds.
