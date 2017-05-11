@@ -32,6 +32,9 @@ class MapsAndLocationViewController: UIViewController, MKMapViewDelegate, CLLoca
         
         //Keep pin in memory, to remove it on new button press
         pin = newPin
+        
+        //Blue dot for user, updates automaticaly 
+        //map.showsUserLocation = true
     }
     
     override func viewDidLoad() {
